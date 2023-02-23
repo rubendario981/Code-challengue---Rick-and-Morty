@@ -12,6 +12,7 @@ import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { DetailLocationComponent } from './pages/detail-location/detail-location.component';
 import { DetailEpisodeComponent } from './pages/detail-episode/detail-episode.component';
 import { DetaisCharacterComponent } from './pages/detais-character/detais-character.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DetaisCharacterComponent } from './pages/detais-character/detais-charac
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

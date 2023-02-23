@@ -1,0 +1,33 @@
+.home{
+  display: flex;
+  justify-content: center;
+}
+.image-land>img{
+  width: 300px;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+.title-home{
+  position: absolute;
+  margin-top: 220px;
+  z-index: 10;
+  color: #763fad;
+  font-weight: 900;
+  font-size: 80px;
+  text-align: center;
+}
+.cards-home{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #202329;
+  padding-top: 48px;  
+}
+
+
+/* 
+● #763fad
+● #202329
+● #d0a9dd
+● #ff9800
+● #ffffff */

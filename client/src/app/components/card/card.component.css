@@ -1,0 +1,42 @@
+.card{
+  display: flex;
+  background-color: #763fad;
+  color: #fff;
+  width: 550px;
+  height: 200px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+.img-card>img{
+  height: 200px;
+  border-radius: 10px 0 0 10px;
+}
+.description-card{
+  margin: 0 16px;
+}
+.name-in-card{
+  font-size: 28px;
+  font-weight: 900;
+  margin: 12px 0 0;
+}
+.status-character{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+.descrip{
+  margin: 0;
+}
+.descrip-result{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0 0 18px;
+}
+
+/* 
+● #763fad
+● #202329
+● #d0a9dd
+● #ff9800
+● #ffffff */

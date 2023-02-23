@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #763fad;
+  padding: 8px 18px;
+  color: #fff;
+}
+
+.logo>img {
+  filter: brightness(1);
+  mix-blend-mode: multiply;
+  width: 64px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pages-header>a {
+  margin: 0 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 
+● #763fad
+● #202329
+● #d0a9dd
+● #ff9800
+● #ffffff */

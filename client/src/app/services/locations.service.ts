@@ -11,11 +11,11 @@ export class LocationsService {
     this.url = "http://localhost:3000"
   }
 
-  getAllCharacters():Observable<any>{
+  getAllLocations():Observable<any>{
     return this.request.get(`${this.url}/locations`)
   }
 
-  getDetailCharacter(id: number):Observable<any>{
+  getDetailLocation(id: number):Observable<any>{
     return this.request.get(`${this.url}/detail-location/${id}`)
   }
 }

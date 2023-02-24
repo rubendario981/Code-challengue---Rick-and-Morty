@@ -1,0 +1,7 @@
+<div *ngIf="character">
+  <div class="details-character-thumb" [routerLink]="['/']">
+    <img ngSrc="{{character.image}}" class="img-thumb" width="75" height="75" alt="image of {{character.name}}" priority>
+    <p>{{character.name}}</p>
+  </div>
+
+</div>

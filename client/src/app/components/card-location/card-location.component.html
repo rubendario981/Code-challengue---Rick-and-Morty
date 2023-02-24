@@ -1,0 +1,31 @@
+<div *ngIf="location" class="card-location">
+  <div class="details-location">
+    <div class="desc-location">
+      <h3>Location</h3>
+      <a [routerLink]='["details/", id]'>{{location.name}}</a>
+    </div>
+    <div class="desc-location">
+      <h3>Type location</h3>
+      <p>{{location.type}}</p>
+    </div>
+    <div class="desc-location">
+      <h3>Dimension</h3>
+      <p>{{location.dimension}}</p>
+    </div>
+  </div>
+  <h3>Residents</h3>
+  <div *ngIf="location.residents.length > 0; else noResidents">
+    <div class="residents-location">
+      <div *ngFor="let res of location.residents">
+        <app-small-card-character [url]="res"></app-small-card-character>
+      </div>
+    </div>
+  </div>
+  <ng-template #noResidents>
+    <div  style="margin: auto;">
+      <img src="https://img4.goodfon.com/wallpaper/nbig/0/f1/rick-and-morty-rick-morty-rik-morti-rik-i-morti-ten-teni-pol.jpg" height="120" width="240" alt="landing rick - morty">
+      <p style="color: #fff; text-align: center;">In this location there aren't residents</p>
+    </div>
+  </ng-template>
+
+</div>

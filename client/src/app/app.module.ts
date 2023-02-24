@@ -13,6 +13,9 @@ import { DetailLocationComponent } from './pages/detail-location/detail-location
 import { DetailEpisodeComponent } from './pages/detail-episode/detail-episode.component';
 import { DetaisCharacterComponent } from './pages/detais-character/detais-character.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardLocationComponent } from './components/card-location/card-location.component';
+import { SmallCardCharacterComponent } from './components/small-card-character/small-card-character.component';
+import { NgOptimizedImage } from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -25,12 +28,15 @@ import { HttpClientModule } from '@angular/common/http';
     EpisodesComponent,
     DetailLocationComponent,
     DetailEpisodeComponent,
-    DetaisCharacterComponent
+    DetaisCharacterComponent,
+    CardLocationComponent,
+    SmallCardCharacterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]

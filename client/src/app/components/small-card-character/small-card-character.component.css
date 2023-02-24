@@ -1,0 +1,14 @@
+.details-character-thumb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90px;
+  margin: 18px
+}
+.img-thumb{
+  width: 75px;
+  height: 75px;
+  border: #fff solid 8px;
+  border-radius: 50%;
+}

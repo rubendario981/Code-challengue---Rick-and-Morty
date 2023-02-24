@@ -21,6 +21,18 @@ export const getCharacters = async (req, res) => {
   }
 }
 
+export const getNameFirstEpisodeCharacter = async (req, res) => {
+  const { id } = req.params
+  try {
+    const response = await fetch(`${URL}/episode/${id}`)
+    const { name } = await response.json()
+    res.json(name)
+    
+  } catch (error) {
+    res.status(500).json(error)    
+  }
+}
+
 export const getDetailLocation = async (req, res) => {
   const { id } = req.params
   try {

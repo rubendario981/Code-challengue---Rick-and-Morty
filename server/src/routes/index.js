@@ -9,6 +9,8 @@ routes.get("/detail-location/:id", controller.getDetailLocation)
 
 routes.get("/characters", controller.getCharacters)
 
+routes.get("/first-episode/:id", controller.getNameFirstEpisodeCharacter)
+
 routes.get("/detail-character/:id", controller.getDetailCharacter)
 
 export default routes;

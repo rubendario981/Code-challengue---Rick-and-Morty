@@ -6,10 +6,12 @@ export class Character {
     public species: string,
     public type: string,
     public gender: string,
-    public origin: object,
+    public origin: {
+      name: string
+    },
     public location: object,
     public image: string,
-    public episode: [],
+    public episode: any,
     public url: string,
     public created: string,
   ) {

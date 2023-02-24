@@ -18,4 +18,8 @@ export class CharactersService {
   getDetailCharacter(id: number):Observable<any>{
     return this.request.get(`${this.url}/detail-character/${id}`)
   }
+  
+  getFirstEpisodeName(id: any):Observable<any>{
+    return this.request.get(`${this.url}/first-episode/${id}`)
+  }
 }

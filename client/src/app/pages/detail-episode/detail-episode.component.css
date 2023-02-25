@@ -1,0 +1,57 @@
+.details-episode{
+  background-color: #202329;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.details-episode>img{  
+  filter: brightness(1.1) blur(6px);
+  mix-blend-mode: multiply;
+  position: absolute;
+  width: 300px;
+  margin: 0 auto;
+}
+.card-details-episode{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #763fad;
+  margin: 32px 18px;
+}
+.card-details-episode>h3{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  margin: 8px;
+}
+.data-episode{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 48px;
+}
+.data-episode>div{
+  text-align: center;
+  padding: 12px 32px;
+}
+.data-episode>div>h5, p{
+  margin: 0;
+}
+.characersOnEpisode{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 24px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 4px #763fad;
+  border-radius: 14px;
+}
+
+/* 
+● #763fad
+● #202329
+● #d0a9dd
+● #ff9800
+● #ffffff */

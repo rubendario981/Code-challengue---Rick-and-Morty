@@ -1,1 +1,22 @@
-<p>detail-episode works!</p>
+<div *ngIf="episode" class="details-episode">
+  <img src="https://www.pngitem.com/pimgs/m/515-5152607_freetoedit-cute-rick-morty-rickandmorty-wallpaper-black-and.png" alt="">
+  <div class="card-details-episode">
+    <h3>{{episode.name}}</h3>
+    <div class="data-episode">
+      <div>
+        <h5>Release date</h5>
+        <p>{{episode.air_date}}</p>
+      </div>
+      <div>
+        <h5>Season and episode</h5>
+        <p>{{episode.episode.split("E")[0]}} - Episode {{episode.episode.split("E")[1]}}</p>
+      </div>
+    </div>
+    <h3>In this episode appears</h3>
+    <div class="characersOnEpisode">
+      <div *ngFor="let ch of episode.characters">
+        <app-small-card-character [url]="ch"></app-small-card-character>
+      </div>
+    </div>
+  </div>
+</div>

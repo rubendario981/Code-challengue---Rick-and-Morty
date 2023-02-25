@@ -1,0 +1,13 @@
+.episodes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 24px 0;
+  background-color: #202329;
+}
+/* 
+● #763fad
+● #202329
+● #d0a9dd
+● #ff9800
+● #ffffff */

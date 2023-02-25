@@ -1,0 +1,18 @@
+<div *ngIf="episode" class="card-episode" [routerLink]="['details/', episode.id]">
+  <div class="detail-episode">
+    <div>
+      <h3>Name episode</h3>
+      <p>{{episode.name}}</p>
+    </div>
+    <div>
+      <h3>On first air</h3>
+      <p>{{episode.air_date}}</p>
+    </div>
+    <div>
+      <h3>Season and episode</h3>
+      <p>{{episode.episode.split("E")[0]}} - Episode {{episode.episode.split("E")[1]}}</p>
+    </div>
+  </div>
+  <div *ngIf="showCharacters">
+  </div>
+</div>

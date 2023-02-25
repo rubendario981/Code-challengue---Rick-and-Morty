@@ -15,7 +15,9 @@ import { DetaisCharacterComponent } from './pages/detais-character/detais-charac
 import { HttpClientModule } from '@angular/common/http';
 import { CardLocationComponent } from './components/card-location/card-location.component';
 import { SmallCardCharacterComponent } from './components/small-card-character/small-card-character.component';
-import { NgOptimizedImage } from '@angular/common'
+import { NgOptimizedImage } from '@angular/common';
+import { CardEpisodeComponent } from './components/card-episode/card-episode.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -30,13 +32,15 @@ import { NgOptimizedImage } from '@angular/common'
     DetailEpisodeComponent,
     DetaisCharacterComponent,
     CardLocationComponent,
-    SmallCardCharacterComponent
+    SmallCardCharacterComponent,
+    CardEpisodeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

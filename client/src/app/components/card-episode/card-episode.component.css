@@ -1,0 +1,28 @@
+.card-episode{
+  background-color: #763fad;
+  background-image: url("https://render.fineartamerica.com/images/rendered/search/print/6/8/break/images/artworkimages/medium/3/1-rick-and-morty-achsan-abdun.jpg");
+  border: solid #763fad 4px;  
+  border-radius: 12px;
+  background-position-y: center; 
+  background-position-x: right; 
+  color: #fff;
+  width: 350px;
+  margin: 18px 10px;
+  padding: 12px;
+  cursor: pointer;
+}
+.card-episode:hover{
+  box-shadow: 1px 1px 4px 5px #d0a9dd;
+}
+.detail-episode> div> h3, p{
+  margin: 0;
+}
+.detail-episode> div{
+  margin: 8px 0;
+}
+/* 
+● #763fad
+● #202329
+● #d0a9dd
+● #ff9800
+● #ffffff */

@@ -2,31 +2,35 @@
   display: flex;
   background-color: #763fad;
   color: #fff;
-  width: 550px;
+  width: 600px;
   height: 200px;
   margin-bottom: 24px;
   border-radius: 12px;
-  cursor: pointer;
 }
-.card:hover{
+
+.ccard:hover {
   background-color: #4b197d;
   box-shadow: 5px 5px 5px #d0a9dd;
-  box-shadow: 5px 4px 47px -3px rgba(235,214,214,0.63);
--webkit-box-shadow: 5px 4px 47px -3px rgba(235,214,214,0.63);
--moz-box-shadow: 5px 4px 47px -3px rgba(235,214,214,0.63);
+  box-shadow: 5px 4px 47px -3px rgba(235, 214, 214, 0.63);
+  -webkit-box-shadow: 5px 4px 47px -3px rgba(235, 214, 214, 0.63);
+  -moz-box-shadow: 5px 4px 47px -3px rgba(235, 214, 214, 0.63);
 }
 
 .img-card>img {
   height: 200px;
-  border-radius: 12px;
+  border-radius: 12px 0 0 12px;
+  cursor: pointer;
 }
 
 .description-card {
   margin: 0 16px;
 }
+.description-card> div{
+  cursor: pointer;
+}
 
 .name-in-card {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 900;
   margin: 12px 0 0;
   overflow: hidden;
@@ -34,7 +38,7 @@
 }
 
 .status-character {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   margin: 0 0 18px;
 }

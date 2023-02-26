@@ -9,12 +9,8 @@
   <div *ngFor="let ch of characters">    
     <app-card 
       [id]="ch.id"
-      [name]="ch.name" 
-      [status]="ch.status" 
-      [speccy]="ch.species" 
-      [origin]="ch.origin.name" 
-      [episode]="ch.episode.slice(0,1)" 
-      [image]="ch.image">
+      [firstEpisode]="ch.episode.slice(0,1)" 
+      >
      </app-card>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <div *ngIf="location" class="card-location">
-  <div class="details-location">
+  <div class="details-location"  [routerLink]="['/locations/details/', id]">
     <div class="desc-location">
       <h3>Location</h3>
       <a [routerLink]='["details/", id]'>{{location.name}}</a>

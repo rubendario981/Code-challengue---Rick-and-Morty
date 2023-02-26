@@ -1,16 +1,22 @@
-<div class="card" [routerLink]="['/detail-character/', id]">
-  <div class="img-card">
-    <img src={{image}} alt="character img">
+<div class="card">
+  <div class="img-card" [routerLink]="['/characters/details/', character.id]">
+    <img src={{character.image}} alt="character img">
   </div>
   <div class="description-card">
-    <h3 class="name-in-card">{{name}}</h3>
-    <p class="status-character">
-      {{status === 'Alive' ? '🟢' : status === 'Dead' ? '🔴' : '🔘'}}
-      {{status}} - {{speccy}}
-    </p>
-    <p class="descrip">Last known location:</p>
-    <h3 class="descrip-result">{{origin}}</h3>
-    <p class="descrip">First seen in:</p>
-    <h3 class="descrip-result">{{nameEpisode}}</h3>
+    <div [routerLink]="['/characters/details/', character.id]">
+      <h3 class="name-in-card">{{character.name}} {{character.id}}</h3>
+      <p class="status-character">
+        {{character.status === 'Alive' ? '🟢' : character.status === 'Dead' ? '🔴' : '🔘'}}
+        {{character.status}} - {{character.species}}
+      </p>
+    </div>
+    <div [routerLink]="['/locations/details/', id]">
+      <p class="descrip">Last known location:</p>
+      <h3 class="descrip-result">{{character.origin.name}}</h3>
+    </div>
+    <div [routerLink]="['/episodes/details/', id]">
+      <p class="descrip">First seen in:</p>
+      <h3 class="descrip-result">{{nameEpisode}}</h3>
+    </div>
   </div>
 </div>

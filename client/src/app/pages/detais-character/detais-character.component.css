@@ -1,0 +1,56 @@
+.page-details-character {
+  display: flex;
+  justify-content: center;
+  background-color: #202329;
+  min-height: 500px;
+  padding: 24px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  border: solid #4b197d 4px;
+  border-radius: 12px;
+  background-color: #763fad;
+  color: #fff;
+}
+
+.card>.img-card>img {
+  border-radius: 12px 0 0 0;
+}
+
+.card>.description-card {
+  margin: 28px 16px;
+}
+
+.name-in-card {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 12px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.status-character {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+
+.descrip {
+  margin: 0;
+}
+
+.show-episodes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.show-episodes>h3{
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 0 6px;
+}

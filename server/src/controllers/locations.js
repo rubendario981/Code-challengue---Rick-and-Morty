@@ -20,3 +20,15 @@ export const getDetailLocation = async (req, res) => {
     res.status(500).json(error)
   }
 }
+
+
+export const getLocationsByPage = async (req, res) => {
+  const { page } = req.params
+  try {
+    const response = await fetch(`${URL}/location/?page=${page}`)
+    res.json(await response.json())
+    
+  } catch (error) {
+    res.status(500).json(error)    
+  }
+}

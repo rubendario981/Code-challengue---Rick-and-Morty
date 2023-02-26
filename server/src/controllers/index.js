@@ -1,6 +1,6 @@
 const URL = "https://rickandmortyapi.com/api";
 
-export const getCharacters = async (req, res) => {
+export const getAllCharacters = async (req, res) => {
   try {
     const response = await fetch(`${URL}/character`)
     res.json(await response.json())
@@ -30,5 +30,16 @@ export const getDetailCharacter = async (req, res) => {
     
   } catch (error) {
     res.status(500).json(error)
+  }
+}
+
+export const getCharactersByPage = async (req, res) => {
+  const { page } = req.params
+  try {
+    const response = await fetch(`${URL}/character/?page=${page}`)
+    res.json(await response.json())
+    
+  } catch (error) {
+    res.status(500).json(error)    
   }
 }

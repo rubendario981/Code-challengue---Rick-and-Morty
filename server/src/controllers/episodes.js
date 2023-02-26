@@ -20,3 +20,14 @@ export const getDetailEpisode = async (req, res)=>{
     res.status(500).json();
   }
 }
+
+export const getEpisodesByPage = async (req, res )=>{
+  const { page } = req.params;
+  try {
+    const response = await fetch(`${URL}/episode/?page=${page}`);
+    res.json(await response.json())
+
+  } catch (error) {
+    res.status(500).json();
+  }
+}

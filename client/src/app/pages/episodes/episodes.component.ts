@@ -22,7 +22,9 @@ export class EpisodesComponent {
   @HostListener("window:scroll")
   loadMore() {
     const scrollTop = this.document.documentElement.scrollTop;
-    if ((this.currentPage < this.pages) && (this.currentPage * 600 < scrollTop)) {
+    console.log(scrollTop);
+    
+    if ((this.currentPage < this.pages) && (this.currentPage * 1000 < scrollTop)) {
       this.currentPage++
       this.requestEpisodes.loadMoreEpisodes(this.currentPage).subscribe(
         response => {
@@ -44,9 +46,5 @@ export class EpisodesComponent {
         this.currentPage = 1
       }
     )
-  }
-
-  ngDoCheck() {
-
   }
 }

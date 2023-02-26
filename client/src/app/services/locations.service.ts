@@ -18,4 +18,8 @@ export class LocationsService {
   getDetailLocation(id: number):Observable<any>{
     return this.request.get(`${this.url}/detail-location/${id}`)
   }
+
+  getLocationsByPage(page: number):Observable<any>{
+    return this.request.get(`${this.url}/locations-page/${page}`)
+  }
 }

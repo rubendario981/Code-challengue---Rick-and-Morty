@@ -1,1 +1,35 @@
-<p>detail-location works!</p>
+<div class="details-location">
+  <div class="card-location">
+    <h3>Details of location</h3>
+    <div class="general-description">
+      <div class="description-location">
+        <h3>Name location</h3>
+        <p>{{location.name}}</p>
+      </div>
+  
+      <div class="description-location">
+        <h3>Type of location</h3>
+        <p>{{location.type}}</p>
+      </div>
+  
+      <div class="description-location">
+        <h3>Dimension location</h3>
+        <p>{{location.dimension}}</p>
+      </div>
+    </div>
+    <div>
+      <h3>Residents in this location</h3>
+      <div class="list-residents">
+        <div *ngFor="let res of location.residents">
+          <app-small-card-character [url]="res"></app-small-card-character>
+        </div>
+        <div *ngIf="location.residents.length === 0" style="display: flex; flex-direction: column;">
+          <img src="https://img4.goodfon.com/wallpaper/nbig/0/f1/rick-and-morty-rick-morty-rik-morti-rik-i-morti-ten-teni-pol.jpg" height="120" width="240" style="margin: 0 auto 24px; border-radius: 8px;" alt="landing rick - morty">
+          <p style="color: #763fad; font-size: 24px; text-align: center;">In this location there aren't residents</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

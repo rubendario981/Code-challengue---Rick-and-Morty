@@ -31,7 +31,6 @@ export class LocationsComponent {
         }
       )
     }
-    console.log(this.currentPage, " - ", this.pages);
     
     if (this.currentPage === this.pages) this.endPage = true
 

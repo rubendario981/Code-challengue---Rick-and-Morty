@@ -1,5 +1,13 @@
-<div *ngIf="episodes.length > 0" class="episodes">
+<div *ngIf="episodes.length > 0 && episodes" 
+  infiniteScroll
+  [infiniteScrollDistance]="8"
+  [infiniteScrollThrottle]="500"
+  (scrolled)="loadMore()"
+  class="episodes">
   <div *ngFor="let episode of episodes">
     <app-card-episode [url]="episode.url"></app-card-episode>
   </div>
+</div>
+<div *ngIf="endPage" class="endResults">
+  <p>End of results</p>
 </div>

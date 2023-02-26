@@ -17,7 +17,9 @@ import { CardLocationComponent } from './components/card-location/card-location.
 import { SmallCardCharacterComponent } from './components/small-card-character/small-card-character.component';
 import { NgOptimizedImage } from '@angular/common';
 import { CardEpisodeComponent } from './components/card-episode/card-episode.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CharactersComponent } from './pages/characters/characters.component'
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
 
 @NgModule({
   declarations: [
@@ -33,14 +35,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     DetaisCharacterComponent,
     CardLocationComponent,
     SmallCardCharacterComponent,
-    CardEpisodeComponent
+    CardEpisodeComponent,
+    CharactersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgOptimizedImage,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

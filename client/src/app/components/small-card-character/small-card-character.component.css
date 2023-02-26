@@ -4,7 +4,8 @@
   justify-content: center;
   text-align: center;
   width: 90px;
-  margin: 18px
+  margin: 18px;
+  cursor: pointer;
 }
 .img-thumb{
   width: 75px;

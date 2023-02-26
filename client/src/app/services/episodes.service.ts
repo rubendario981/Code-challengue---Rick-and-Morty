@@ -18,4 +18,8 @@ export class EpisodesService {
   getDetailEpisode(id: number):Observable<any>{
     return this.request.get(`${this.url}/episode/${id}`)
   }
+
+  loadMoreEpisodes(page: number):Observable<any>{
+    return this.request.get(`${this.url}/episodes-page/${page}`)
+  }
 }

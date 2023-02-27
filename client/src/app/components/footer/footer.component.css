@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #d0a9dd;
+  padding: 18px 0;
+  color: #fff;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.social-media>a>div {
+  text-align: center;
+}
+
+.social-media>a>div>img {
+  width: 48px;
+  margin: 0 auto;
+}
+.social-media>a{
+  text-decoration: none;
+}
+
+/* 
+● #763fad
+● #202329
+● #d0a9dd
+● #ff9800
+● #ffffff */

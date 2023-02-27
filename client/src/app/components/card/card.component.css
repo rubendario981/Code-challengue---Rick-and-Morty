@@ -25,7 +25,8 @@
 .description-card {
   margin: 0 16px;
 }
-.description-card> div{
+
+.description-card>div {
   cursor: pointer;
 }
 
@@ -56,9 +57,49 @@
   white-space: nowrap;
 }
 
-/* 
-● #763fad
-● #202329
-● #d0a9dd
-● #ff9800
-● #ffffff */
+@media only screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 320px;
+    height: 300px;
+  }
+
+  .img-card>img {
+    width: 320px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .name-in-card {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 12px;
+    align-items: center;
+  }
+
+  .status-character {
+    font-size: 11px;
+    font-weight: 100;
+    margin: 0 0 9px;
+  }
+
+  .descrip-result {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 100;
+    margin: 0 0 8px;
+  }
+  .description-card>div{
+    display:  inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+  }
+  .description-card>div:first-child{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+}

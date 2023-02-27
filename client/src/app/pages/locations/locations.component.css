@@ -7,45 +7,5 @@
   padding: 25px 0;
 }
 .card-location{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #763fad;
-  width: 580px;
   margin: 18px 0;
-  border-radius: 8px;
 }
-.card-location>h3{
-  display: block;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  margin: 8px 0;
-}
-.details-location{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  background-color: #d0a9dd;
-}
-.desc-location > h3, p, a{
-  text-align: center;
-  margin: 4px;
-  text-decoration: none;
-  color: #763fad;
-}
-.residents-location{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 150px;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* 
-● #763fad
-● #202329
-● #d0a9dd
-● #ff9800
-● #ffffff */

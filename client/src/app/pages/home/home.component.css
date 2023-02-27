@@ -9,11 +9,11 @@
 }
 .title-home{
   position: absolute;
-  margin-top: 220px;
+  margin-top: 290px;
   z-index: 10;
   color: #763fad;
   font-weight: 900;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
 }
 .cards-home{
@@ -24,10 +24,16 @@
   padding-top: 48px;  
 }
 
-
-/* 
-● #763fad
-● #202329
-● #d0a9dd
-● #ff9800
-● #ffffff */
+@media only screen and (max-width: 768px) {
+  .image-land>img{
+    width: 200px;
+  }
+  .title-home{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 200px;
+  }
+  .cards-home{
+    padding-top: 24px;  
+  }
+}

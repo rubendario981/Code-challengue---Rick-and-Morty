@@ -4,6 +4,8 @@
   width: 580px;
   background-color: #763fad;
   padding-bottom: 36px;
+  border: solid 4px #ff9800;
+  border-radius: 12px;
 }
 .card-location> h3{
   text-align: center;
@@ -29,11 +31,34 @@
   flex-wrap: wrap;
   justify-content: space-around;
   height: 140px;
-  color: aliceblue;
+  color: #fff;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
-
+@media only screen and (max-width: 768px) {
+  .card-location{
+    width: 380px;
+    margin: 18px auto;
+    padding-bottom: 16px;
+  }
+  .desc-location > h3, p, a{
+    margin: 0;
+  }
+  .desc-location > h3{
+    font-size: 12px;
+    font-weight: bolder;
+  }
+  .desc-location > p, a{
+    font-size: 10px;
+  }
+  .residents-location{
+    height: 270px;
+    color: #fff;
+    margin-top: -16px;
+  }
+}
 /* 
 ● #763fad
 ● #202329

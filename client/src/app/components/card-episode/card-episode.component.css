@@ -20,9 +20,9 @@
 .detail-episode> div{
   margin: 8px 0;
 }
-/* 
-● #763fad
-● #202329
-● #d0a9dd
-● #ff9800
-● #ffffff */
+@media only screen and (max-width: 600px) {
+  .card-episode{
+    width: 310px;
+    margin: 10px auto;
+  }
+}

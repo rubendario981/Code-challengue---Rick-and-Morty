@@ -1,29 +1,30 @@
 <div class="page-details-character">
   <div *ngIf="character.episode" class="card">
-    <div class="card">
-      <div class="img-card" [routerLink]="['/characters/details/', character.id]">
-        <img src={{character.image}} alt="character img">
-      </div>
-      <div class="description-card" >
-        <div [routerLink]="['/characters/details/', character.id]">
-          <h3 class="name-in-card">{{character.name}} {{character.id}}</h3>
-          <p class="status-character">
-            {{character.status === 'Alive' ? '🟢' : character.status === 'Dead' ? '🔴' : '🔘'}}
-            {{character.status}} - {{character.species}}
-          </p>
-        </div>
-        <div [routerLink]="['/locations/details/', id]">
+    <div class="body-card">
+      <div class="image-name">
+        <div class="img-card" [routerLink]="['/characters/details/', character.id]">
+          <div [routerLink]="['/characters/details/', character.id]">
+            <h3 class="name-in-card">{{character.name}}</h3>
+            <p class="status-character">
+              {{character.status === 'Alive' ? '🟢' : character.status === 'Dead' ? '🔴' : '🔘'}}
+              {{character.status}} - {{character.species}}
+            </p>
+          </div>
+          <img src={{character.image}} alt="character img">
           <p class="descrip">Last known location:</p>
           <h3 class="descrip-result">{{character.origin.name}}</h3>
-          <app-detail-location></app-detail-location>
-        </div>        
+        </div>
       </div>
+
       <div class="show-episodes">
-        <h3>List of episodes {{character.gender === "Male" ? "he appears" : character.gender === "Female" ? "she appears" : "this rare species appears"}}</h3>
+        <h3>List of episodes
+          {{character.gender === "Male" ? "he appears" : character.gender === "Female" ? "she appears" : "this rare species appears"}}
+        </h3>
         <div *ngFor="let episode of character.episode" class="list-episodes">
-          <app-card-episode [url]="episode"></app-card-episode>        
+          <app-card-episode [url]="episode"></app-card-episode>
         </div>
       </div>
     </div>
+
   </div>
 </div>

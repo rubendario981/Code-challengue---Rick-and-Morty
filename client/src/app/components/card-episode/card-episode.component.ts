@@ -12,7 +12,6 @@ export class CardEpisodeComponent {
   @Input() url!: string
   public id!: number;
   public episode!: Episode
-  public showCharacters!: boolean
   constructor(private requestEpisode: EpisodesService){
     
   }

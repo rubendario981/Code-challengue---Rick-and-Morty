@@ -9,48 +9,85 @@
 .card {
   display: flex;
   flex-wrap: wrap;
-  width: 900px;
+  width: 100%;
   border: solid #4b197d 4px;
   border-radius: 12px;
   background-color: #763fad;
   color: #fff;
 }
 
-.card>.img-card>img {
-  border-radius: 12px 0 0 0;
+.body-card {
+  display: inline-flex;
 }
 
-.card>.description-card {
-  margin: 28px 16px;
+.image-name {
+  display: flex;
 }
 
 .name-in-card {
   font-size: 24px;
   font-weight: 900;
-  margin: 12px 0 0;
+  margin: 8px 0;
   overflow: hidden;
   white-space: nowrap;
+  text-align: center;
 }
 
 .status-character {
   font-size: 14px;
   font-weight: 500;
-  margin: 0 0 18px;
+  margin: 0 0 8px;
+  text-align: center;
 }
 
 .descrip {
   margin: 0;
+  text-align: center;
 }
 
-.show-episodes{
+.descrip-result {
+  text-align: center;
+}
+
+/* no cambiar!!!!!!!!!!!! */
+.show-episodes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.show-episodes>h3{
+
+.show-episodes>h3 {
   width: 100%;
   text-align: center;
   font-size: 32px;
   margin: 10px 0 6px;
+}
+
+@media only screen and (max-width: 992px) {
+  .body-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-name {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img-card>img {
+    border-radius: 12px;
+  }
+
+  .descrip {
+    font-size: 12px;
+  }
+  
+  .descrip-result {
+    font-size: 18px;
+  }
+  .show-episodes>h3 {
+    font-size: 18px;
+    margin: 10px 0 6px;
+  }
 }

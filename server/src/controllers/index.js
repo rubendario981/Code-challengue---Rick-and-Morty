@@ -14,8 +14,8 @@ export const getNameFirstEpisodeCharacter = async (req, res) => {
   const { id } = req.params
   try {
     const response = await fetch(`${URL}/episode/${id}`)
-    const { name } = await response.json()
-    res.json(name)
+    const  { name, url } = await response.json()
+    res.json({name, url})
     
   } catch (error) {
     res.status(500).json(error)    

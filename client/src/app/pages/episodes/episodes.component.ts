@@ -21,9 +21,7 @@ export class EpisodesComponent {
   }
   @HostListener("window:scroll")
   loadMore() {
-    const scrollTop = this.document.documentElement.scrollTop;
-    console.log(scrollTop);
-    
+    const scrollTop = this.document.documentElement.scrollTop;    
     if ((this.currentPage < this.pages) && (this.currentPage * 1000 < scrollTop)) {
       this.currentPage++
       this.requestEpisodes.loadMoreEpisodes(this.currentPage).subscribe(

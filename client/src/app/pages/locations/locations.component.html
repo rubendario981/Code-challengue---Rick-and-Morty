@@ -1,6 +1,11 @@
-<div *ngIf="locations.length > 0; else withoutResults" class="results-location" (scrolled)="loadMore()" infiniteScroll
-  [infiniteScrollDistance]="8" [infiniteScrollThrottle]="500">
-  <div *ngFor="let loc of locations; let i = index" class="card-location">
+<div *ngIf="locations.length > 0; else withoutResults" 
+  class="results-location" 
+  (scrolled)="loadMore()" infiniteScroll
+  [infiniteScrollDistance]="8" 
+  [infiniteScrollThrottle]="500"
+>
+  <div *ngFor="let loc of locations; let i = index" 
+  class="card-location">
     <app-card-location [id]="loc.id"></app-card-location>
   </div>
 </div>

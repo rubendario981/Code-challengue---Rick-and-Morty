@@ -22,4 +22,8 @@ export class CharactersService {
   getFirstEpisodeName(id: any):Observable<any>{
     return this.request.get(`${this.url}/first-episode/${id}`)
   }
+
+  getCharactersByPage(page: number):Observable<any>{
+    return this.request.get(`${this.url}/characters-page/${page}`)
+  }
 }

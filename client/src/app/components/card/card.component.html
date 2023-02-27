@@ -10,11 +10,11 @@
         {{character.status}} - {{character.species}}
       </p>
     </div>
-    <div [routerLink]="['/locations/details/', id]">
+    <div [routerLink]="['/locations/details/', idLocation]">
       <p class="descrip">Last known location:</p>
       <h3 class="descrip-result">{{character.origin.name}}</h3>
     </div>
-    <div [routerLink]="['/episodes/details/', id]">
+    <div [routerLink]="['/episodes/details/', idEpisode]">
       <p class="descrip">First seen in:</p>
       <h3 class="descrip-result">{{nameEpisode}}</h3>
     </div>

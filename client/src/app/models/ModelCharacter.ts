@@ -7,7 +7,8 @@ export class Character {
     public type: string,
     public gender: string,
     public origin: {
-      name: string
+      name: string,
+      url: number
     },
     public location: object,
     public image: string,

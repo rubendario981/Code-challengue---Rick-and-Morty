@@ -15,6 +15,8 @@ export class CardComponent {
   @Input() firstEpisode!: Array<string>;
   @Input() showAllDetails!: boolean;
   public nameEpisode: string;
+  public idEpisode!: number;
+  public idLocation!: number
 
   constructor(private requestCharacter: CharactersService) {
     this.nameEpisode = "";
@@ -22,11 +24,17 @@ export class CardComponent {
 
   ngOnInit() {
     this.requestCharacter.getFirstEpisodeName(this.firstEpisode[0].split("/")[5]).subscribe(
-      response => this.nameEpisode = response
+      response => {
+        this.nameEpisode = response.name;
+        this.idEpisode = response.url.split('/').pop();
+      }
     )
 
     this.requestCharacter.getDetailCharacter(this.id).subscribe(
-      response => this.character = response
+      response => {
+        this.character = response
+        this.idLocation = response.origin.url.split('/').pop()
+      }
     )
   }
 }

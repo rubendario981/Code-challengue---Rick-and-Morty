@@ -1,11 +1,11 @@
-<div class="home">
+<div class="home" >
   <div class="image-land">
     <img src="https://www.pngitem.com/pimgs/m/43-437889_rick-and-morty-morty-png-rick-and-morty.png" class="img-shadows"
       alt="shadows of Ricky and Morty">
   </div>
   <h3 class="title-home">The Rick and Morty API</h3>
 </div>
-<div class="cards-home" *ngIf="characters.length > 0">
+<div class="cards-home" *ngIf="characters.length > 0" (scrolled)="loadMore()">
   <div *ngFor="let ch of characters">    
     <app-card 
       [id]="ch.id"
